@@ -21,8 +21,15 @@ function UserAddress(town, city, county){
 }
 
 //user Logic
-
-var userSample2 = new UserContact('Magarita','Apondi', '0756789844');
-var userSample2Address = new UserAddress('Pemba','Malindi','Mombasa');
-userSample2.Address.push(userSample2Address)
-console.log(userSample2.Address)
+$(document).ready(function(){
+  //getting inputs from form
+  var userFirstName = $('#userFirstName').val();
+  var userLastName = $('#userLastName').val();
+  var userPhoneNumber = $('#phoneNumber').val();
+  var userTown = $('#userTown').val();
+  var userCity = $('#userCity').val();
+  var userCounty = $('#userCounty').val();
+  //creating user and address objects using construct
+    var User = new UserContact(userFirstName, userLastName, userPhoneNumber);
+    var UserAddresses = new UserAddress(userTown, userCity, userCounty);
+})
