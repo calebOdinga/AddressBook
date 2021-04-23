@@ -15,6 +15,10 @@
     <div id="banner-left">
       <h1>Address Book</h1>
       <img src="FrostedGlass.webp" alt="design inspiration">
+      <div id="display">
+        <ul id="contactlist">
+        </ul>
+      </div>
     </div>
     <div id="form-right">
       <form action="#">
@@ -25,9 +29,9 @@
           <input type="text" name="userLastName" id="userLastName" class="form-group">
         </label>
         <label for="phoneNumber">Phone:
-          <input type="number" name="phoneNumber" id="phoneNumber" class="form-group">
+          <input type="text" name="phoneNumber" id="phoneNumber" class="form-group">
         </label><hr>
-        <h2>Address</h2>
+        <h2 id="inputAddress">Address</h2>
         <label for="town">Town:
           <input type="text" name="userTown" id="userTown" class="form-group">
         </label>
@@ -35,7 +39,7 @@
           <input type="text" name="userCity" id="userCity" class="form-group">
         </label>
         <label for="county">County:
-          <input type="text" name="county" id="county" class="form-group">
+          <input type="text" name="county" id="userCounty" class="form-group">
         </label><br>
         <button type="button" id="addAddress" name="addAddress">Add Address</button>
         <button type="submit" id="submit" name="submit">SUBMIT</button>
